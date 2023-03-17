@@ -16,18 +16,17 @@
 
 # Dependencies
 
-**TODO: adapt this section**
-
-- `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
+This plugin depends on common POSIX utilities (`awk`, `grep`, `sed`, etc.),
+Bash, Git, and Go. If you have a Go toolchain installed and selected via asdf
+(`asdf current golang`), it will be used to retrieve and build goconvey.
+Otherwise, asdf will be used to retrieve the latest Go version and that will be
+used for the build.
 
 # Install
 
 Plugin:
 
 ```shell
-asdf plugin add goconvey
-# or
 asdf plugin add goconvey https://github.com/therounds-contrib/asdf-goconvey.git
 ```
 
@@ -58,4 +57,6 @@ Contributions of any kind welcome! See the [contributing guide](contributing.md)
 
 # License
 
-See [LICENSE](LICENSE) © [Boondoc Technologies Inc.](https://therounds.com/)
+See [LICENSE](LICENSE).
+
+Copyright © 2023 [Boondoc Technologies Inc.](https://therounds.com/)
