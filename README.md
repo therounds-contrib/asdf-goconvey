@@ -27,6 +27,8 @@ used for the build.
 Plugin:
 
 ```shell
+asdf plugin add goconvey
+# or
 asdf plugin add goconvey https://github.com/therounds-contrib/asdf-goconvey.git
 ```
 
